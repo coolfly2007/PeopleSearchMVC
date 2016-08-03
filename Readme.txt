@@ -4,6 +4,8 @@ Notes:
 
 2. The project is using IIS Express.
 
+3. Unit Testing was created with Moq.
+
 
 Setup:
 
