@@ -9,7 +9,7 @@ Notes:
 
 Setup:
 
-1. In order to make the project work properly, please run CreationScript.sql under Scripts\SQL in the project folder to create tables and testing data first.
+1. Run CreationScript.sql under Scripts\SQL in the project folder to create tables and testing data first.
 
 2. Set the PeopleSearchMvc project as the startup project.
 
