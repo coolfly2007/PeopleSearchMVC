@@ -20,13 +20,12 @@ The People Search Application
 
 Business Requirements
 
-    The application accepts search input in a text box and then displays in a pleasing style a list of people where any part of their first or last name matches what was typed in the search box (displaying at least name, address, age, interests, and a picture). 
-    Solution should either seed data or provide a way to enter new users or both
-    Simulate search being slow and have the UI gracefully handle the delay 
+  1. The application accepts search input in a text box and then displays in a pleasing style a list of people where any part of their first or last name matches what was typed in the search box (displaying at least name, address, age, interests, and a picture). 
+  2. Solution should either seed data or provide a way to enter new users or both Simulate search being slow and have the UI gracefully handle the delay 
 
 Technical Requirements
 
-    An ASP.NET MVC OR a WPF Application that uses the MVVM Design Pattern
-    If you use ASP.NET MVC then use Ajax to respond to search request (no full page refresh) using JSON for both the request and the response
-    Use Entity Framework Code First to talk to the database
-    Unit Tests for appropriate parts of the application 
+    1. An ASP.NET MVC OR a WPF Application that uses the MVVM Design Pattern
+    2. If you use ASP.NET MVC then use Ajax to respond to search request (no full page refresh) using JSON for both the request and the response
+    3. Use Entity Framework Code First to talk to the database
+    4. Unit Tests for appropriate parts of the application 
