@@ -1,0 +1,1 @@
+Please run CreationScript.sql under Scripts\SQL in the project folder to create tables and testing data first.

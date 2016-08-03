@@ -1,0 +1,36 @@
+﻿@model PeopleSearchMvc.Models.PeopleListModel
+
+
+<div class="divTable">
+    <div class="divTableBody">
+        <div class="divTableHead">First Name</div>
+        <div class="divTableHead">Last Name</div>
+        <div class="divTableHead">Age</div>
+        <div class="divTableHead">Addresses</div>
+        <div class="divTableHead">Interests</div>
+        <div class="divTableHead">Picture</div>
+        @foreach (var person in @Model.PeopleList)
+        {
+            <div class="divTableRow">
+                <div class="divTableCell">@person.FirstName</div>
+                <div class="divTableCell">@person.LastName</div>
+                <div class="divTableCell">@person.Age</div>
+                <div class="divTableCell">
+                    @foreach (var address in person.Addresses)
+                    {
+                        <div>@address</div>
+                    }
+                </div>
+                <div class="divTableCell">
+                    @foreach (var interest in person.Interests)
+                    {
+                        <div>@interest</div>
+                    }
+                </div>
+                <div class="divTableCell"><img src="@person.AvatarUrl" /></div>
+            </div>
+        }
+    </div>
+</div>
+
+

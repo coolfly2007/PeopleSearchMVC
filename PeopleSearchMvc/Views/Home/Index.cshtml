@@ -1,0 +1,18 @@
+﻿@model PeopleSearchMvc.Models.PeopleListModel
+<script type="text/javascript" src="/scripts/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="/scripts/PeopleSearch/PeopleSearch.js"></script>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="div-wrapper">
+    <input  class="peopleSearchBox" type="text" id="search" placeholder="Search for..." required>
+    <button class ="peopleSearchSubmit" type="submit" id="submit">Search</button>
+</div>
+<div id="busydiv" style="display:none">Please wait while we contact the server <img src="~/Content/busy.gif" /></div>
+<div class="peopleList">
+    @Html.Partial("PeopleList", Model)
+</div>
+
+
